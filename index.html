@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700|Barlow:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/main.css" />
+
+    <title>Frontend Mentor | Project Tracking</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" />
+
+        <div class="icon" id="icon">
+          <div class="hamburger" id="hamburger"></div>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="menu" id="menu">
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#" class="login">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="image">
+        <img src="./images/illustration-devices.svg" alt="" />
+      </div>
+
+      <div class="contents">
+        <p class="heading"><span>New</span> Monograph Dashboard</p>
+        <h1>Powerful insights into your team</h1>
+        <p class="summary">
+          Project planning and time tracking for agile teams
+        </p>
+
+        <div class="buttons">
+          <a href="#" class="button button-schedule">Schedule a demo</a>
+          <a href="#" class="button button-preview">to see a live preview</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const icon = document.getElementById('icon');
+      const menu = document.getElementById('menu');
+      const hamburger = document.getElementById('hamburger');
+
+      icon.addEventListener('click', function() {
+        menu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
